@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap');
+
+:root {
+    --pine: #4c7031;
+    --iron: #824737;
+    --rust: #b55232;
+    --carrot: #f49619;
+    --white: #ffffff;
+    --cream: #fff0cb;
+    --mainfont: "Nunito Sans", sans-serif;
+    --secondfont: "Ovo", sans-serif;
+    --fontsize1: 2.5rem;
+    --fontsize2: 2rem;
+    --fontsize3: 1.1rem;
+    --mainheight: 100vh;
+    --mainwidth: 100vw;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--fontsize3);
+    font-family: var(--mainfont);
+    margin: 0;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: var(--iron);
+    font-size: var(--fontsize1);
+    font-family: var(--secondfont);
+    text-align: center;
+    text-shadow: 30px 30px 30px 30px black;
+}
+
+h3 {
+    font-size: var(--fontsize2);
+    font-family: var(--secondfont);
+}
+
+header {
+    background-color: #fff0cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    border-bottom: 1rem solid var(--iron);
+    border-style: double;
+    height: 220px;
+}
+
+.logo {
+    max-width: 100%;
+    margin: .3rem;
+}
+
+.navbar {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-active {
+    display: none;
+}
+
+.listitem {
+    list-style: none;
+    margin: 0;
+    word-spacing: 1rem;
+    margin: 3rem;
+
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--pine);
+    padding: 5px;
+
+}
+
+a:hover {
+    color: var(--carrot);
+
+}
+
+.btn {
+    color: var(--cream);
+    background-color: var(--pine);
+    border: .05rem solid var(--rust);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+.btn:hover {
+    color: black;
+    background-color: var(--carrot);
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+    font-size: 1.2em;
+    padding: 0;
+    border: solid var(--iron);
+    border-radius: 3px;
+
+}
+
+.burger i {
+    display: none;
+    padding: 0;
+    color: var(--cream);
+    background-color: var(--iron);
+    border: solid var(--iron);
+
+}
+
+.hero {
+    background-image: url('https://assets.codepen.io/t-15440/fm-corn.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.hero h2 {
+    display: flex;
+}
+
+.fm-wrapper {
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.card {
+    margin: 2.5rem 0;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+footer {
+    background-color: #4c7031;
+    color: #fff;
+    height: 12rem;
+    font-size: var(--fontsize3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1rem solid var(--rust);
+    border-style: double;
+    margin: 0;
+    padding: 5rem;
+}
+
+.para {
+    white-space: none;
+}
+
+/* CSS for Farmers Market Contact Page*/
+.main-contact {
+    margin: 2rem;
+    /* text-align: center; */
+}
+
+.contact-heading {
+    text-align: center;
+}
+
+form {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.contact-btn {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: var(--pine);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--rust);
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+
+}
+
+.contact-btn:hover {
+    background-color: var(--carrot);
+    padding: 5px;
+}
+
+
+@media (max-width: 700px) {
+
+    .burger {
+        display: block;
+        left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: space-around;
+        background: var(--iron);
+        position: absolute;
+        top: 200px;
+        height: 100%;
+        padding: 0;
+        align-items: center;
+        opacity: 95%;
+        display: none;
+        transition: all 400ms;
+    }
+
+    .listitem a {
+        color: var(--cream);
+        /* background-color: #f49619; */
+        border-radius: 15%;
+        padding: 5px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .listitem a:hover {
+        background-color: var(--cream);
+        color: var(--iron);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .nav-active {
+        display: block;
+        left: 0;
+        right: 0;
+        text-align: center;
+        word-spacing: 1rem;
+    }
+
+    .burger i {
+        display: block;
+    }
+
+}
+
+@media (min-width: 700px) {
+    header {
+        height: 210px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .navbar {
+        margin: 0;
+        flex-direction: row;
+    }
+
+    .listitem {
+        margin: 0.5rem;
+    }
+
+    .burger i {
+        display: none;
+    }
+
+    .fm-wrapper {
+        padding: 1rem;
+    }
+
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    form {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 950px) {
+    header {
+        height: 150px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 .5rem;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .navbar {
+        margin: 0 0 0 6rem;
+        padding: 0;
+    }
+}

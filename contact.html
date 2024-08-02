@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM Contact Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"> 
+</head>
+<body>
+    <header>
+        <h1><img src="https://assets.codepen.io/t-15440/fm-logo.png " alt="logo" class="logo"></h1>
+        <button class="burger">
+            <i class="fa fa-bars"></i>
+        </button>
+      <nav>
+        <ul class="navbar" >
+            <li class="listitem"><a href="index.html">Home</a></li>
+            <li class="listitem"><a href="https://santabarbaraca.com/plan-your-trip/attractions-entertainment/" target="_blank">Location</a></li>
+            <li class="listitem"><a href="https://www.montecito-estate.com/blog/santa-barbara-farmers-markets.php" target="_blank">Vendors</a></li>
+            <li class="listitem"><a href="https://www.montecito-estate.com/blog/santa-barbara-farmers-markets.php" target="_blank">Newsletter</a></li>
+            <li class="listitem"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <div class="main-contact">
+        <div class="contact-heading">
+            <h2>Contact Us.</h2>
+            <p>Questions, Comments or Concerns?</p>
+            <p>We would love to hear your feedback.</p>           
+        </div>
+        <form class="contact-form">
+            <h3>Contact Form:</h3>
+            
+            <fieldset>
+               
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+        
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="" row="4" cols="50" placeholder="Comments..."></textarea>
+        
+                <label for="review">Please Rate Us:</label>
+                <input type="range" value="0" max="10" oninput="num.value = this.value">
+<output id="num">0</output><br>  
+            </fieldset>   
+            <button type="submit" class="contact-btn">Send</button>   
+        </form>
+    </div>    
+    <footer>
+        <p> &copy; 2024 Springdale Farmer's Market Association. All Rights Reserved. </p>
+    </footer>
+    <script src="JS/custom.js"></script>
+    
+</body>
+</html>
